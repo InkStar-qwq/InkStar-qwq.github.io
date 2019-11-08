@@ -1888,7 +1888,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #e8572e;
+  background: #e749bb;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3262,12 +3262,12 @@ pre {
 }
 .headband {
   height: 3px;
-  background: rgba(96,163,236,0.788);
+  background: #83c9e9;
 }
 .site-meta {
   padding: 20px 0;
   color: #fff;
-  background: rgba(96,163,236,0.788);
+  background: #83c9e9;
 }
 .site-subtitle {
   margin-top: 10px;
