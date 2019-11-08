@@ -75,14 +75,14 @@
 
 
 
-<meta name="description" content="Almost every thing ! ! ! Just kidding :P">
+<meta name="description" content="关于这个分类  以后会写的 它咕咕了 懒得写">
 <meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="http:&#x2F;&#x2F;inkstar-qwq.github.io&#x2F;tags&#x2F;index.html">
+<meta property="og:title" content="categories">
+<meta property="og:url" content="http:&#x2F;&#x2F;inkstar-qwq.github.io&#x2F;categories&#x2F;index.html">
 <meta property="og:site_name" content="InkStar-qwq">
-<meta property="og:description" content="Almost every thing ! ! ! Just kidding :P">
+<meta property="og:description" content="关于这个分类  以后会写的 它咕咕了 懒得写">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-11-08T02:34:41.386Z">
+<meta property="og:updated_time" content="2019-11-08T07:06:13.476Z">
 <meta name="twitter:card" content="summary">
 
 
@@ -115,7 +115,7 @@
 
 
 
-  <link rel="canonical" href="http://InkStar-qwq.github.io/tags/"/>
+  <link rel="canonical" href="http://InkStar-qwq.github.io/categories/"/>
 
 
 
@@ -445,9 +445,10 @@
 <h3 id="样例解释-1"><a href="#样例解释-1" class="headerlink" title="样例解释:"></a>样例解释:</h3><p>第一组数据中，三个人全部说真话可以满足条件。</p>
 <p>第二组数据中，前两个人说真话，第三个人说假话可以满足条件（这时候一共有2个人说了真话，第三个人的描述自然不正确）</p>
 <p>第三组数据中，一名无聊的OIer一个人产生了一个“这句话是假话”的悖论，因此无论如何他所说的话都自相矛盾。</p>
-<h3 id="数据规模与约定-1"><a href="#数据规模与约定-1" class="headerlink" title="数据规模与约定:"></a>数据规模与约定:</h3><pre><code>对于30%的数据，n,T≤10。
-对于65%的数据，n≤1000。
-对于100%的数据，1≤n,T≤100000，每个测试点内n的和不超过1000000。</code></pre><h3 id="题解-转自：这里"><a href="#题解-转自：这里" class="headerlink" title="题解:(转自：这里)"></a>题解:(转自：<a href="https://www.cnblogs.com/wzc521/p/11771686.html" target="_blank" rel="noopener">这里</a>)</h3><p>如果没有第一种情况，那么可以假设第一个人说的是实话，然后暴力判断就好了。</p>
+<h3 id="数据规模与约定-1"><a href="#数据规模与约定-1" class="headerlink" title="数据规模与约定:"></a>数据规模与约定:</h3><p>对于30%的数据，n,T≤10。</p>
+<p>对于65%的数据，n≤1000。</p>
+<p>对于100%的数据，1≤n,T≤100000，每个测试点内n的和不超过1000000。</p>
+<h3 id="题解-转自：这里"><a href="#题解-转自：这里" class="headerlink" title="题解:(转自：这里)"></a>题解:(转自：<a href="https://www.cnblogs.com/wzc521/p/11771686.html" target="_blank" rel="noopener">这里</a>)</h3><p>如果没有第一种情况，那么可以假设第一个人说的是实话，然后暴力判断就好了。</p>
 <p>现在考虑如何处理有第一种情况的情况。</p>
 <p>如果一个人出现了第一种情况，那么直到上一个出现第一种情况的人之间这一段就已经被确认了，而这个人说话的真实性只有两种情况，如果他说的是正确的，那么与他同种（都是第一种情况，且k一样）的人也说的是对的，其余都是错的，所以可以预处理出来这个人说真话和说假话时该段说真话和说假话的人数。</p>
 <p><strong>代码:</strong></p>
