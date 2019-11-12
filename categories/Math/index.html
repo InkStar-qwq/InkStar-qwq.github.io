@@ -56,16 +56,16 @@
 <link href="/css/main.css?v=6.0.0" rel="stylesheet" type="text/css" />
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/galaxy_128px.png?v=6.0.0">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.0.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/galaxy_32px.ico?v=6.0.0">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.0.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/galaxy_16px.ico?v=6.0.0">
 
 
-  <link rel="mask-icon" href="/images/logo.svg?v=6.0.0" color="#222">
+  <link rel="mask-icon" href="/images/galaxy.svg?v=6.0.0" color="#222">
 
 
 
@@ -130,7 +130,7 @@
 
 
 
-  <title>标签: Test | InkStar-qwq</title>
+  <title>分类: Math | InkStar-qwq</title>
   
 
 
@@ -304,11 +304,11 @@
   
   
   
-  <div class="post-block tag">
+  <div class="post-block category">
 
     <div id="posts" class="posts-collapse">
       <div class="collection-title">
-        <h2>Test<small>标签</small>
+        <h2>Math<small>分类</small>
         </h2>
       </div>
 
@@ -320,37 +320,9 @@
 
       <h3 class="post-title">
         
-            <a class="post-title-link" href="/2019/11/10/%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/" itemprop="url">
+            <a class="post-title-link" href="/2019/11/12/%E6%A6%82%E7%8E%87%E6%B5%85%E6%9E%90/" itemprop="url">
               
-                <span itemprop="name">Update log</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-11-10T00:00:00+08:00"
-              content="2019-11-10" >
-          11-10
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2019/11/08/Markdown%E8%AF%AD%E6%B3%95%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/" itemprop="url">
-              
-                <span itemprop="name">Test</span>
+                <span itemprop="name">概率浅析</span>
               
             </a>
         
@@ -358,9 +330,9 @@
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
-              datetime="2019-11-08T00:00:00+08:00"
-              content="2019-11-08" >
-          11-08
+              datetime="2019-11-12T00:00:00+08:00"
+              content="2019-11-12" >
+          11-12
         </time>
       </div>
 
@@ -377,6 +349,7 @@
   
 
   
+
 
 
           </div>
@@ -424,7 +397,7 @@
               
                 <a href="/archives/%7C%7C%20archive">
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -435,7 +408,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -446,7 +419,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -576,6 +549,44 @@
 
   
 </div>
+
+<span id="sitetime"></span>
+<script language=javascript>
+  function siteTime(){
+    window.setTimeout("siteTime()", 1000);
+    var seconds = 1000;
+    var minutes = seconds * 60;
+    var hours = minutes * 60;
+    var days = hours * 24;
+    var years = days * 365;
+    var today = new Date();
+    var todayYear = today.getFullYear();
+    var todayMonth = today.getMonth()+1;
+    var todayDate = today.getDate();
+    var todayHour = today.getHours();
+    var todayMinute = today.getMinutes();
+    var todaySecond = today.getSeconds();
+    /* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+    year - 作为date对象的年份，为4位年份值
+    month - 0-11之间的整数，做为date对象的月份
+    day - 1-31之间的整数，做为date对象的天数
+    hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+    minutes - 0-59之间的整数，做为date对象的分钟数
+    seconds - 0-59之间的整数，做为date对象的秒数
+    microseconds - 0-999之间的整数，做为date对象的毫秒数 */
+    var t1 = Date.UTC(2019,11,08,00,00,00); //北京时间2018-2-13 00:00:00
+    var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+    var diff = t2-t1;
+    var diffYears = Math.floor(diff/years);
+    var diffDays = Math.floor((diff/days)-diffYears*365);
+    var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+    var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+    var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+    document.getElementById("sitetime").innerHTML="This blog has running for: "+/*diffYears+" 年 "+*/diffDays+" d "+diffHours+" h "+diffMinutes+" m "+diffSeconds+" s "+" ღゝ◡╹)ノ♡"+"<br>";
+  }
+  siteTime();
+</script>
+
 
 
   <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
